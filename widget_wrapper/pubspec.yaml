@@ -13,11 +13,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  pdf: ^3.10.0
+  pdf:
+    git:
+      url: https://github.com/raaja-guidely/dart_pdf.git
+      path: pdf/
+      ref: master
+
 
 dependency_overrides:
-  pdf:
-    path: ../pdf
+ # pdf:
+ #   path: ../pdf
 
 dev_dependencies:
   flutter_lints: ^3.0.0
