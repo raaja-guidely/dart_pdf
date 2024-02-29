@@ -247,10 +247,10 @@ class MultiPage extends Page {
       final child = children[_index];
 
       // Detect too big widgets
-      if (sameCount++ > maxPages) {
-        throw TooManyPagesException(
-            'This widget created more than $maxPages pages. This may be an issue in the widget or the document. See https://pub.dev/documentation/pdf/latest/widgets/MultiPage-class.html');
-      }
+ //     if (sameCount++ > maxPages) {
+   //     throw TooManyPagesException(
+     //       'This widget created more than $maxPages pages. This may be an issue in the widget or the document. See https://pub.dev/documentation/pdf/latest/widgets/MultiPage-class.html');
+      //}
 
       // Create a new page if we don't already have one
       if (context == null || child is NewPage) {
